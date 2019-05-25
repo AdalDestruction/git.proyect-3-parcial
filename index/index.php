@@ -11,8 +11,11 @@
     <title>Bienvenido a AWP Comics</title>
 
     <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/animated.css">
+    <link rel="stylesheet" href="../assets/css/imagehover.min.css">
     <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Montserrat|Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
 
     <meta http-equiv="Expires" content="0">
     <meta http-equiv="Last-Modified" content="0">
@@ -21,26 +24,16 @@
 
     <script src="../js/jquery-3.4.1.js"></script>
     <script src="../js/main.js"></script>
-
-
   </head>
   <body>
   <header>
           <span id="button-menu" class="fa fa-bars"></span>
           <nav class="navegacion">
               <ul class="menu">
-                  <!-- TITULAR -->
-                  <li class="title-menu">Que hacer?</li>
-                  <!-- TITULAR -->
+                  <li class="title-menu">Menu</li>
                   <li><a href="index.php"><span class="fa fa-home icon-menu"></span>Inicio</a></li>
                   <li class="item-submenu" menu="1">
-                      <a href="#"><span class="fas fa-journal-whills"></span> Comics</a>
-                      <ul class="submenu">
-                          <li class="title-menu"><span class="fas fa-journal-whills"></span> Comics</li>
-                          <li class="go-back">Atras</li>
-                          <li><a href="#">Marvel</a></li>
-                          <li><a href="#">Dc</a></li>
-                      </ul>
+                      <a href="../shoppingcart.php"><span class="fas fa-shopping-cart"></span> Carrito</a>
                   </li>
                   <li class="item-submenu" menu="2">
                       <a href="tienda-index.php"><span class="fa fa-shopping-bag icon-menu"></span>Tienda</a>
@@ -49,9 +42,15 @@
               </ul>
           </nav>
       </header>
-    <p class="cfc">QUIENES SOMOS?</p>
-    <p class="res1">SOMOS UNA TIENDA ONLINE EN LA QUE TU VIENES <br>PENSANDO EN COMPRAR UN COMIC Y CIERRAS TU <br>NAVEGADOR CON TU COMIC  EN CAMINO.</p>
 
+    <div class="intro">
+      <img class="imgF" src="../assets/src/fondo.jpg" alt="">
+      
+    </div>
+    <div class="animated rubberBand delay-2s">
+        <p class="cfc">QUIENES SOMOS?</p>
+        <p class="res1">SOMOS UNA TIENDA ONLINE EN LA QUE TU VIENES <br>PENSANDO EN COMPRAR UN COMIC Y CIERRAS TU <br>NAVEGADOR CON TU COMIC  EN CAMINO.</p>
+    </div>
     <div class="container-comics-graphic">
         <div class="container-comic-1">
           <img 
@@ -79,6 +78,7 @@
             <p class="tittle-comic">BATGIRL VOL 5: ART OF THE CRIME</p>
             <p class="disp">NO DISPONIBLE</p>
 
+            
         </div>
     </div>
 
@@ -121,11 +121,11 @@
       <div class="container-series">
         <div class="horiz">
           <div class="container-series-1">
-            <img 
-              class="container-series-img"
-              src="../assets/src/current-series/action-comics.jpg" 
-              alt="">
-            <p class="container-series-title"><a href="shop action comics/shop.php">ACTION COMICS</a></p>
+              <img 
+                class="container-series-img"
+                src="../assets/src/current-series/action-comics.jpg" 
+                alt=""> 
+              <p class="container-series-title"><a href="shop action comics/shop.php">ACTION COMICS</a></p>
           </div>
 
           <div class="container-series-1">

@@ -1,0 +1,74 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+section {
+    width: 100%;
+    position: relative;
+    height: 580px;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background: #000428;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #004e9293, #0004289c), url(../src/foto1.jpeg);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #004e928e, #0004288f), url(../src/foto1.jpeg);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    -webkit-clip-path: polygon(11% 0, 91% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(11% 0, 91% 0, 100% 100%, 0% 100%);
+}
+
+.imgyo {
+    width: 300px;
+    height: 300px;
+    border-radius: 200px;
+    margin-top: 25px;
+}
+
+.nombre {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.desc {
+    text-align: center;
+    font-family: 'Mandali', sans-serif;
+    color: #fff;
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+a {
+    font-family: 'Ranga', cursive;
+    color: #fff;
+    text-align: center;
+    font-size: 64px;
+    text-decoration: none;
+}
+
+.fotoGrupal {
+    margin-top: 50px;
+    border: 1px solid rgb(102, 102, 102);
+    border-left: 0;
+    border-right: 0;
+}
+
+.me {
+    font-size: 100px;
+    text-align: center;
+    margin-top: 30px;
+    font-family: 'Mandali', sans-serif;
+}
+
+img {
+    width: 32px;
+    height: 32px;
+}
+
+.atras {
+    margin-top: -600px;
+    margin-left: 10px;
+}

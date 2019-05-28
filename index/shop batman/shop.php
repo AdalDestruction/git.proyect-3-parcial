@@ -14,7 +14,7 @@
                     'item_quantity' => $_POST["quantity"],
                 );
                 $_SESSION["cart"][$count] = $item_array;
-                echo '<script>window.location="shop.php"</script>';
+                echo '<script>window.location="shop.php#table"</script>';
             }else{
                 echo '<script>alert("Ya has previamente añadido este producto")</script>';
                 echo '<script>window.location="shop.php"</script>';
@@ -34,8 +34,6 @@
             foreach ($_SESSION["cart"] as $keys => $value){
                 if ($value["product_id"] == $_GET["id"]){
                     unset($_SESSION["cart"][$keys]);
-                    echo '<script>alert("A chingar a su madre...!")</script>';
-                    echo '<script>window.location="shop.php"</script>';
                 }
             }
         }
@@ -107,7 +105,7 @@
 </head>
 <body>
     <div class="atras">
-        <a href="../index.php">
+    <a href="../index.php#ac">
             <img src="../../assets/src/previous.png" alt="" width="32" heigth="32">
         </a>
     </div>
@@ -143,7 +141,7 @@
 
         <div style="clear: both"></div>
         <h3 class="title2">Detallas de tu compra</h3>
-        <div class="table-responsive">
+        <div id="table" class="table-responsive">
             <table class="table table-bordered">
             <tr>
                 <th width="30%">Nombre del comic</th>

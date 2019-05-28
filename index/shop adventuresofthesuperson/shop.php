@@ -14,7 +14,7 @@
                     'item_quantity' => $_POST["quantity"],
                 );
                 $_SESSION["cart"][$count] = $item_array;
-                echo '<script>window.location="shop.php"</script>';
+                echo '<script>window.location="shop.php#table"</script>';
             }else{
                 echo '<script>alert("Ya has previamente añadido este producto")</script>';
                 echo '<script>window.location="shop.php"</script>';
@@ -34,8 +34,7 @@
             foreach ($_SESSION["cart"] as $keys => $value){
                 if ($value["product_id"] == $_GET["id"]){
                     unset($_SESSION["cart"][$keys]);
-                    echo '<script>alert("A chingar a su madre...!")</script>';
-                    echo '<script>window.location="shop.php"</script>';
+                
                 }
             }
         }
@@ -49,7 +48,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Adventures of the super sons | AWP Comics</title>
+    <title>ADVENTURES OF THE SUPER SONS | AWP Comics</title>
 
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
@@ -106,7 +105,7 @@
 </head>
 <body>
     <div class="atras">
-        <a href="../index.php">
+    <a href="../index.php#ac">
             <img src="../../assets/src/previous.png" alt="" width="32" heigth="32">
         </a>
     </div>
@@ -141,7 +140,7 @@
 
         <div style="clear: both"></div>
         <h3 class="title2">Detallas de tu compra</h3>
-        <div class="table-responsive">
+        <div id="table" class="table-responsive">
             <table class="table table-bordered">
             <tr>
                 <th width="30%">Nombre del comic</th>

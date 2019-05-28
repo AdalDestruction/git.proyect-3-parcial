@@ -31,13 +31,9 @@
           <nav class="navegacion">
               <ul class="menu">
                   <li class="title-menu">Menu</li>
-                  <li><a href="index.php"><span class="fa fa-home icon-menu"></span>Inicio</a></li>
-                  <li class="item-submenu" menu="1">
-                      <a href="../shoppingcart.php"><span class="fas fa-shopping-cart"></span> Carrito</a>
-                  </li>
-                  <li class="item-submenu" menu="2">
-                      <a href="tienda-index.php"><span class="fa fa-shopping-bag icon-menu"></span>Tienda</a>
-                  </li>
+                  <li class="lihover"><a href="index.php"><span class="fa fa-home icon-menu"></span>Inicio</a></li>
+                  <li><a href="../shoppingcart.php"><span class="fas fa-shopping-cart"></span> Carrito</a></li>
+                  <li><a href="../shop/shop.php"><span class="fa fa-shopping-bag icon-menu"></span>Tienda</a></li>
                   <li><a href="aboutUs.php"><span class="fa fa-envelope icon-menu"></span>Quienes somos?</a></li>
               </ul>
           </nav>
@@ -84,13 +80,14 @@
 
       <div class="must-read">
         <div class="must-read-w-c">
-          <img 
+          <a class="img-most-read" href="shop wondercomics/shop.php"><img 
               src="../assets/src/comics/wonder comics.jpg" 
               alt="Wonder Comics" 
               width="300" 
-              heigth="400">
+              heigth="400"></a>
               <p class="desc1">¡ESTOS NIÑOS ESTÁN LUCHANDO CON TODO!</p>
               <P class="tittle-comic-m-r">WONDER COMICS</P>
+              <p class="disponible-si">Disponible</p>
         </div>
 
         <div class="must-read-sand">
@@ -101,16 +98,18 @@
               heigth="400">
               <p class="desc1">DE LA MENTE DE NEIL GAIMAN</p>
               <P class="tittle-comic-m-r">THE SANDAMAN UNIVERSE</P>
+              <p class="disponible-no">No disponible</p>
         </div>
         
         <div class="must-read-doom">
-          <img 
+        <a class="img-most-read" href="shop doomsdayclock/shop.php"><img 
               src="../assets/src/comics/doomsday clock.jpg" 
               alt="Doomsday Clock" 
               width="300" 
-              heigth="400">
+              heigth="400"></a>
               <p class="desc1">LA DOCEAVA EDICIÓN DELUXE SERIES</p>
               <P class="tittle-comic-m-r">DOOMSDAY CLOCK</P>
+              <p class="disponible-si">Disponible</p>
         </div>
       </div>
 
@@ -125,7 +124,7 @@
                 class="container-series-img"
                 src="../assets/src/current-series/action-comics.jpg" 
                 alt=""> 
-              <p class="container-series-title"><a href="shop action comics/shop.php">ACTION COMICS</a></p>
+              <p id="ac" class="container-series-title"><a href="shop action comics/shop.php">ACTION COMICS</a></p>
           </div>
 
           <div class="container-series-1">
@@ -187,7 +186,7 @@
               class="container-series-img"
               src="../assets/src/current-series/batman-cotn.jpg" 
               alt="">
-            <p class="container-series-title">BATMAN: CREATIURE OF <br> THE NIGTH</p>
+            <p class="container-series-title"><a href="shop batmancreature/shop.php"> BATMAN: CREATIURE OF <br> THE NIGTH</a></p>
           </div>
 
           <div class="container-series-1">
@@ -195,7 +194,7 @@
               class="container-series-img"
               src="../assets/src/current-series/batman-damned.jpg" 
               alt="">
-            <p class="container-series-title">BATMAN DAMNED</p>
+            <p class="container-series-title"><a href="shop batmandamned/shop.php"> BATMAN DAMNED</a></p>
           </div>
 
           <div class="container-series-1">
@@ -203,7 +202,7 @@
               class="container-series-img"
               src="../assets/src/current-series/books-of-magic.jpg" 
               alt="">
-            <p class="container-series-title">BOOKS OF MAGIC</p>
+            <p class="container-series-title"><a href="shop booksofmagic/shop.php">BOOKS OF MAGIC</a></p>
           </div>
 
           <div class="container-series-1">
@@ -211,7 +210,7 @@
               class="container-series-img"
               src="../assets/src/current-series/catwoman.jpg" 
               alt="">
-            <p class="container-series-title">CATWOMAN</p>
+            <p class="container-series-title"><a href="shop catwoman/shop.php"> CATWOMAN</a></p>
           </div>
 
           <div class="container-series-1">
@@ -219,7 +218,7 @@
               class="container-series-img"
               src="../assets/src/current-series/damage.jpg" 
               alt="">
-            <p class="container-series-title">DAMAGE</p>
+            <p class="container-series-title"><a href="shop damage/shop.php"> DAMAGE</a></p>
               </div>
             </div>
           </div>

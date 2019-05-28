@@ -1,21 +1,35 @@
 <?php
   require '../database.php';
   $message = '';
-  if (!empty($_POST['nombre']) && !empty($_POST['password'])) {
+
+
+  if (!empty($_POST['nombre']) && !empty($_POST['password']) && !empty($_POST['confirm_password'])){
     $sql = "INSERT INTO users (nombre, contrasena) VALUES (:nombre, :password)";
     $stmt = $conn->prepare($sql);
     $stmt->bindParam(':nombre', $_POST['nombre']);
     $password = password_hash($_POST['password'], PASSWORD_BCRYPT);
     $stmt->bindParam(':password', $password);
 
-    if ($stmt->execute()) {
-      $message = 'Usuario creado con exito';
-      header('Location: ../index/index.php');
-    } else {
-      $message = 'Hubo algun herror creando su cuenta.';
+    
+    if($_POST["password"]==$_POST["confirm_password"]){
+      if ($stmt->execute()) {
+        $message = 'Usuario creado con exito';
+        header('Location: ../index/index.php');
+      } else {
+        $message = 'Hubo algun herror creando su cuenta.';
+      }
+    }else{
+      ?>
+      <script>
+        alert("Las contraseñas no coinciden.")
+      </script>
+        <?php 
     }
+
   }
-?>
+
+  ?>
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -25,6 +39,7 @@
     <title>Registrate en | AWP COMICS</title>
     <link rel="stylesheet" href="../assets/css/registro.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <script src="../js/signup.js"></script>
 </head>
 <header>
 
